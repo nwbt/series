@@ -4,15 +4,26 @@
  *
  * Distributed under terms of the MIT license.
  */
-import _ from 'lodash';
+import {BaseMultiseriesChart} from './base-multiseries-chart';
 
-function component () {
-  'use strict';
-	var element = document.createElement('div');
+console.log('begin');
 
-	element.innerHTML = _.join(['Hello','webpack'], ' ');
-  
-  return element;
-}
+let data = require('../resources/year-2015.json');
+// let data = require('../resources/post-node9-time-series-chrono-pp.json');
+let d3 = require('d3');
 
-document.body.appendChild(component());
+let years = data
+  .filter(
+    (objA) => {
+      return objA.dates.length;
+    })
+  .filter(
+    (objB) => {
+      return objB.year.length;
+    });
+
+new BaseMultiseriesChart(years);
+
+require('../css/styles.css');
+
+console.log('end');
