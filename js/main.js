@@ -7,7 +7,7 @@
 import {BaseMultiseriesChart} from './base-multiseries-chart';
 import css from '../css/styles.css';
 
-let data = require('../resources/years-2014-2015.json');
+let data = require('../resources/post-node9-time-series-chrono-pp.json');
 let d3 = require('d3');
 
 let years = data
