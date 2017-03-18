@@ -1,0 +1,19 @@
+/**
+ * File: style.css Project: series
+ * Copyright (c) 2017 Dan Catalano <dev@nwbt.co>
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+.axis--y line {
+  stroke-opacity: 0.2;
+}
+
+.axis--y path {
+  stroke: none;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}

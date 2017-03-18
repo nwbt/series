@@ -5,11 +5,9 @@
  * Distributed under terms of the MIT license.
  */
 import {BaseMultiseriesChart} from './base-multiseries-chart';
+import css from '../css/styles.css';
 
-console.log('begin');
-
-let data = require('../resources/year-2015.json');
-// let data = require('../resources/post-node9-time-series-chrono-pp.json');
+let data = require('../resources/years-2014-2015.json');
 let d3 = require('d3');
 
 let years = data
@@ -23,7 +21,3 @@ let years = data
     });
 
 new BaseMultiseriesChart(years);
-
-require('../css/styles.css');
-
-console.log('end');
