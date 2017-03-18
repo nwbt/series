@@ -14,6 +14,12 @@
 }
 
 .line {
+  stroke: #1f77b4;
+  stroke-width: 0.5px;
   fill: none;
-  stroke-width: 1.5px;
+}
+
+#lastyear {
+  stroke: red;
+  stroke-width: 3px;
 }
